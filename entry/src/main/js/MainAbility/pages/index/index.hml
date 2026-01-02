@@ -1,0 +1,18 @@
+<div class="container">
+    <div id="topDiv">
+        <div id="empty"></div>
+        <div id="textDiv">
+            <text style="font-size: 24px;">Contactless Payment</text>
+            <text style="font-size: 20px;">{{ cardName }}</text>
+        </div>
+
+        <div id="buttonDiv">
+            <div id="addButton" @click="addCard">
+                <text style="font-size: 24px;">Add Card</text>
+            </div>
+            <div id="removeButton" @click="deleteCard">
+                <text style="font-size: 24px;">Remove</text>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="container" @swipe="goBack">
+    <div id="topDiv">
+        <image style='height: 48px; width: 48px; margin-bottom: 16px;' src="/common/img/checkmark_circle_fill.png">
+        </image>
+        <text style="width: 100%; font-size: 24px; text-align: center;">Card Transfer Success, Remaining: {{ sukCount }}
+        </text>
+    </div>
+</div>

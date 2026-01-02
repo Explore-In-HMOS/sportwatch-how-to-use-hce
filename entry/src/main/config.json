@@ -1,0 +1,77 @@
+{
+  "app": {
+    "bundleName": "com.hmosdemos.lite_wearable.how_to_use_hce",
+    "vendor": "hmosdemos",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "deviceType": [
+      "liteWearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "name": ".MainAbility",
+        "srcLanguage": "js",
+        "srcPath": "MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "label": "$string:MainAbility_label",
+        "type": "page",
+        "skills": [
+          {
+            "entities": [
+              "ohos.nfc.cardemulation.action.HOST_APDU_SERVICE"
+            ],
+            "actions": [
+              "ohos.nfc.cardemulation.action.HOST_APDU_SERVICE"
+            ]
+          }
+        ],
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "paymentAid",
+              "value": "325041592E5359532E4444463031"
+            },
+            {
+              "name": "paymentAid",
+              "value": "A0000000031010"
+            },
+            {
+              "name": "paymentAid",
+              "value": "A0000000041010"
+            }
+          ]
+        }
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/cardTransferSuccess/cardTransferSuccess",
+          "pages/noSuk/noSuk"
+        ],
+        "name": ".MainAbility"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.NFC_CARD_EMULATION",
+        "reason": "NFC is used for payment.",
+        "usedScene": {
+          "when": "always"
+        }
+      }
+    ]
+  }
+}
